@@ -77,3 +77,5 @@ app.post('/users', function (req, res) {
     }
   });
 });
+
+module.exports.handler = serverless(app);
