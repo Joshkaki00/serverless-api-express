@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node start-local.js",
+    "dev": "node local-server.js",
     "offline": "IS_OFFLINE=true USERS_TABLE=my-express-application-dev-UsersDynamoDBTable-AEYHSWFF8GAL serverless offline"
   },
   "keywords": [],
