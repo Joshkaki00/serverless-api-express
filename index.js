@@ -10,11 +10,11 @@ const IS_OFFLINE = process.env.IS_OFFLINE;
 // Configure DynamoDB client
 let dynamoDb;
 if (IS_OFFLINE === 'true') {
+  // Use real AWS DynamoDB even when running offline
   dynamoDb = new AWS.DynamoDB.DocumentClient({
-    region: 'localhost',
-    endpoint: 'http://localhost:8000'
+    region: 'us-east-1'
   });
-  console.log('Using local DynamoDB');
+  console.log('Using AWS DynamoDB for local development');
 } else {
   dynamoDb = new AWS.DynamoDB.DocumentClient();
 }

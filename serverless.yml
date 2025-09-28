@@ -2,13 +2,9 @@ service: my-express-application
 
 custom:
   tableName: 'users-table-${self:provider.stage}'
-  dynamodb:
-    start:
-      migrate: true
 
 plugins:
-  - serverless-dynamodb-local
-  - serverless-offline # Must be last in the list
+  - serverless-offline
 
 provider:
   name: aws
