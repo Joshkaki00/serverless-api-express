@@ -17,6 +17,7 @@
     "serverless-http": "^4.0.0"
   },
   "devDependencies": {
+    "dynamodb-local": "^0.0.35",
     "serverless-dynamodb-local": "^0.2.40",
     "serverless-offline": "^14.4.0"
   }
